@@ -257,6 +257,77 @@ body::before {
   grid-template-columns: 1.1fr 0.9fr;
 }
 
+.visual-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+}
+
+.visual-card {
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid rgba(19, 35, 41, 0.08);
+  background: rgba(255, 255, 255, 0.76);
+  display: grid;
+  min-height: 18rem;
+}
+
+.visual-card-feature {
+  min-height: 30rem;
+}
+
+.visual-media {
+  position: relative;
+  min-height: 16rem;
+}
+
+.visual-card-feature .visual-media {
+  min-height: 22rem;
+}
+
+.visual-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 19, 22, 0.04) 0%,
+    rgba(8, 19, 22, 0.12) 55%,
+    rgba(8, 19, 22, 0.22) 100%
+  );
+}
+
+.visual-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visual-caption {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1rem 1rem 1.1rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.94));
+}
+
+.visual-caption h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.visual-caption p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.visual-credit {
+  font-size: 0.84rem;
+}
+
 .panel {
   padding: 1.4rem;
 }
@@ -496,7 +567,8 @@ a:hover {
 
 @media (max-width: 920px) {
   .hero,
-  .grid-two {
+  .grid-two,
+  .visual-grid {
     grid-template-columns: 1fr;
   }
 
@@ -511,6 +583,10 @@ a:hover {
 
   .hero h1 {
     max-width: none;
+  }
+
+  .visual-card-feature {
+    min-height: 20rem;
   }
 }
 

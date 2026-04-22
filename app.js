@@ -97,6 +97,36 @@ if (!data) {
       .join("");
   }
 
+  function renderVisuals() {
+    return data.visuals
+      .map(
+        (item, index) => `
+          <figure class="visual-card ${index === 0 ? "visual-card-feature" : ""}">
+            <div class="visual-media">
+              <img
+                src="${item.imageUrl}"
+                alt="${item.alt}"
+                loading="${index === 0 ? "eager" : "lazy"}"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <figcaption class="visual-caption">
+              <h3>${item.title}</h3>
+              <p>${item.caption}</p>
+              <p class="visual-credit">
+                Photo:
+                <a href="${item.creditUrl}" target="_blank" rel="noreferrer">${item.creditName}</a>
+                ·
+                <a href="${item.licenseUrl}" target="_blank" rel="noreferrer">${item.licenseLabel}</a>
+              </p>
+            </figcaption>
+          </figure>
+        `
+      )
+      .join("");
+  }
+
   function renderFeedItems() {
     const filtered =
       activeFilter === "all"
@@ -181,6 +211,20 @@ if (!data) {
             </article>
           </div>
         </aside>
+      </section>
+
+      <section class="section">
+        <article class="panel card">
+          <div class="feed-topbar">
+            <div>
+              <h2 class="section-title">At The Wave</h2>
+              <p class="feed-copy">A few openly licensed images from the real Eisbach surf scene, so the tracker feels tied to Munich's actual place and culture rather than a generic status dashboard.</p>
+            </div>
+          </div>
+          <div class="visual-grid section">
+            ${renderVisuals()}
+          </div>
+        </article>
       </section>
 
       <section class="grid-two section">
