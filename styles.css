@@ -108,6 +108,50 @@ body::before {
   padding: 2rem;
 }
 
+.hero-card-image {
+  min-height: 31rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #f6f3ea;
+  background:
+    linear-gradient(180deg, rgba(10, 22, 25, 0.12) 0%, rgba(10, 22, 25, 0.62) 48%, rgba(10, 22, 25, 0.9) 100%),
+    var(--hero-image) center/cover no-repeat;
+}
+
+.hero-card-image .eyebrow {
+  background: rgba(247, 242, 233, 0.16);
+  border-color: rgba(247, 242, 233, 0.14);
+  color: #ecf6f6;
+  backdrop-filter: blur(10px);
+}
+
+.hero-card-image .eyebrow::before {
+  box-shadow: 0 0 0 6px rgba(221, 245, 241, 0.12);
+}
+
+.hero-card-image .hero-lead,
+.hero-card-image .pill-neutral,
+.hero-card-image .pill-warning,
+.hero-card-image .pill-positive {
+  color: #f6f3ea;
+}
+
+.hero-card-image .pill-neutral,
+.hero-card-image .pill-warning,
+.hero-card-image .pill-positive {
+  background: rgba(247, 242, 233, 0.14);
+  border-color: rgba(247, 242, 233, 0.18);
+}
+
+.hero-card-image .pill-warning {
+  color: #fff0e8;
+}
+
+.hero-card-image .pill-positive {
+  color: #edfff3;
+}
+
 .hero-card::after,
 .stats-card::after {
   content: "";
@@ -255,77 +299,6 @@ body::before {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1.1fr 0.9fr;
-}
-
-.visual-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
-}
-
-.visual-card {
-  overflow: hidden;
-  border-radius: 24px;
-  border: 1px solid rgba(19, 35, 41, 0.08);
-  background: rgba(255, 255, 255, 0.76);
-  display: grid;
-  min-height: 18rem;
-}
-
-.visual-card-feature {
-  min-height: 30rem;
-}
-
-.visual-media {
-  position: relative;
-  min-height: 16rem;
-}
-
-.visual-card-feature .visual-media {
-  min-height: 22rem;
-}
-
-.visual-media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(8, 19, 22, 0.04) 0%,
-    rgba(8, 19, 22, 0.12) 55%,
-    rgba(8, 19, 22, 0.22) 100%
-  );
-}
-
-.visual-media img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.visual-caption {
-  display: grid;
-  gap: 0.55rem;
-  padding: 1rem 1rem 1.1rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.94));
-}
-
-.visual-caption h3 {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: 1.35rem;
-  letter-spacing: -0.02em;
-}
-
-.visual-caption p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.visual-credit {
-  font-size: 0.84rem;
 }
 
 .panel {
@@ -550,10 +523,61 @@ a:hover {
   margin-top: 0.7rem;
 }
 
+.photo-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 0.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.photo-tile {
+  margin: 0;
+  border-radius: 18px;
+  padding: 0.45rem;
+  background: rgba(255, 251, 243, 0.82);
+  border: 1px solid rgba(19, 35, 41, 0.08);
+  box-shadow: 0 18px 38px rgba(17, 37, 42, 0.12);
+  transform-origin: center;
+}
+
+.photo-tile-1 {
+  transform: rotate(-4deg) translateY(0.3rem);
+}
+
+.photo-tile-2 {
+  transform: rotate(4deg) translateY(-0.1rem);
+}
+
+.photo-tile-media {
+  overflow: hidden;
+  border-radius: 14px;
+  aspect-ratio: 1 / 1;
+}
+
+.photo-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .footer-note {
   margin-top: 1rem;
   color: var(--muted);
   line-height: 1.6;
+}
+
+.photo-credits {
+  margin-top: 0.65rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.photo-credits a + a {
+  margin-left: 0.35rem;
 }
 
 .empty-state {
@@ -567,8 +591,7 @@ a:hover {
 
 @media (max-width: 920px) {
   .hero,
-  .grid-two,
-  .visual-grid {
+  .grid-two {
     grid-template-columns: 1fr;
   }
 
@@ -583,10 +606,6 @@ a:hover {
 
   .hero h1 {
     max-width: none;
-  }
-
-  .visual-card-feature {
-    min-height: 20rem;
   }
 }
 
@@ -608,6 +627,10 @@ a:hover {
     font-size: clamp(2.4rem, 10vw, 3.4rem);
   }
 
+  .hero-card-image {
+    min-height: 24rem;
+  }
+
   .filter-button,
   .pill {
     width: 100%;
@@ -616,5 +639,14 @@ a:hover {
 
   .feed-date {
     align-items: stretch;
+  }
+
+  .photo-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-tile-1,
+  .photo-tile-2 {
+    transform: none;
   }
 }

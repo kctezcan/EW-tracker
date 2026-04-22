@@ -6,6 +6,9 @@ if (!data) {
 } else {
   const app = document.querySelector("#app");
   const categories = ["all", ...new Set(data.feed.map((item) => item.category))];
+  const visuals = Array.isArray(data.visuals) ? data.visuals : [];
+  const heroVisual = visuals[0] ?? null;
+  const accentVisuals = visuals.slice(1, 3);
   let activeFilter = "all";
 
   const dateFormatter = new Intl.DateTimeFormat("en-GB", {
@@ -97,34 +100,41 @@ if (!data) {
       .join("");
   }
 
-  function renderVisuals() {
-    return data.visuals
+  function renderPhotoStack() {
+    return accentVisuals
       .map(
         (item, index) => `
-          <figure class="visual-card ${index === 0 ? "visual-card-feature" : ""}">
-            <div class="visual-media">
+          <figure class="photo-tile photo-tile-${index + 1}">
+            <div class="photo-tile-media">
               <img
                 src="${item.imageUrl}"
                 alt="${item.alt}"
-                loading="${index === 0 ? "eager" : "lazy"}"
+                loading="lazy"
                 decoding="async"
                 referrerpolicy="no-referrer"
               />
             </div>
-            <figcaption class="visual-caption">
-              <h3>${item.title}</h3>
-              <p>${item.caption}</p>
-              <p class="visual-credit">
-                Photo:
-                <a href="${item.creditUrl}" target="_blank" rel="noreferrer">${item.creditName}</a>
-                ·
-                <a href="${item.licenseUrl}" target="_blank" rel="noreferrer">${item.licenseLabel}</a>
-              </p>
-            </figcaption>
           </figure>
         `
       )
       .join("");
+  }
+
+  function renderPhotoCredits() {
+    if (!visuals.length) {
+      return "";
+    }
+
+    const credits = visuals
+      .map(
+        (item) => `
+          <a href="${item.creditUrl}" target="_blank" rel="noreferrer">${item.creditName}</a>
+          <a href="${item.licenseUrl}" target="_blank" rel="noreferrer">${item.licenseLabel}</a>
+        `
+      )
+      .join(" · ");
+
+    return `<p class="photo-credits">Photos: ${credits}</p>`;
   }
 
   function renderFeedItems() {
@@ -182,9 +192,13 @@ if (!data) {
   }
 
   function render() {
+    const heroStyle = heroVisual
+      ? `style="--hero-image: url('${heroVisual.imageUrl}')"`
+      : "";
+
     app.innerHTML = `
       <section class="hero section">
-        <article class="hero-card card">
+        <article class="hero-card card ${heroVisual ? "hero-card-image" : ""}" ${heroStyle}>
           <span class="eyebrow">Morning status page</span>
           <h1>${data.meta.title}</h1>
           <p class="hero-lead">${data.meta.summary}</p>
@@ -210,21 +224,8 @@ if (!data) {
               <p class="stat-copy">${data.meta.nextWatch}</p>
             </article>
           </div>
+          ${accentVisuals.length ? `<div class="photo-stack">${renderPhotoStack()}</div>` : ""}
         </aside>
-      </section>
-
-      <section class="section">
-        <article class="panel card">
-          <div class="feed-topbar">
-            <div>
-              <h2 class="section-title">At The Wave</h2>
-              <p class="feed-copy">A few openly licensed images from the real Eisbach surf scene, so the tracker feels tied to Munich's actual place and culture rather than a generic status dashboard.</p>
-            </div>
-          </div>
-          <div class="visual-grid section">
-            ${renderVisuals()}
-          </div>
-        </article>
       </section>
 
       <section class="grid-two section">
@@ -292,6 +293,7 @@ if (!data) {
           <p class="footer-note">
             This site is generated from a structured data file so a daily automation can refresh the status without hand-editing the page.
           </p>
+          ${renderPhotoCredits()}
         </article>
       </section>
     `;

@@ -10,7 +10,7 @@ window.EISBACH_DATA = {
     "summaryConfidence": "high",
     "asOf": "2026-04-22T09:00:00+03:00",
     "timezone": "Europe/Istanbul",
-    "generatedByBuild": "2026-04-22T07:55:23.451Z"
+    "generatedByBuild": "2026-04-22T09:23:46.794Z"
   },
   "facts": [
     {
@@ -70,7 +70,7 @@ window.EISBACH_DATA = {
       "title": "The queue, the bridge, and the ritual around the wave",
       "caption": "The Eisbach has always been more than a hydraulic feature. It is a public stage where surfers, spectators, and Munich's urban identity meet in one tiny stretch of water.",
       "alt": "Surfers and spectators gathered around the Eisbach wave in Munich.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Eisbach_Surfers.jpeg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eisbach%20Surfers.jpeg",
       "creditName": "Fred Romero",
       "creditUrl": "https://commons.wikimedia.org/wiki/File:Eisbach_Surfers.jpeg",
       "licenseLabel": "CC BY 2.0",
@@ -80,7 +80,7 @@ window.EISBACH_DATA = {
       "title": "The spot has its own visual language",
       "caption": "Boards stacked along the riverbank are part of the place-memory people are trying to restore, not just the standing wave itself.",
       "alt": "Surfboards lined up beside the Eisbach in Munich.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Eisbach_River_Surfing_Munich_Surfboards.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eisbach%20River%20Surfing%20Munich%20Surfboards.jpg",
       "creditName": "oatsy40",
       "creditUrl": "https://commons.wikimedia.org/wiki/File:Eisbach_River_Surfing_Munich_Surfboards.jpg",
       "licenseLabel": "CC BY 2.0",
@@ -90,7 +90,7 @@ window.EISBACH_DATA = {
       "title": "At its best, the Eisbach is a precise engineered-feeling wave",
       "caption": "That is why the current debate is so technical: small changes in flow and geometry decide whether the spot becomes a surfable face or chaotic whitewater.",
       "alt": "A surfer riding the Eisbach wave in Munich.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Eisbach_Surfing_-_M%C3%BCnchen.JPG",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eisbach%20Surfing%20-%20M%C3%BCnchen.JPG",
       "creditName": "Guido Radig",
       "creditUrl": "https://commons.wikimedia.org/wiki/File:Eisbach_Surfing_-_M%C3%BCnchen.JPG",
       "licenseLabel": "CC BY 3.0",
