@@ -30,6 +30,16 @@ This project is prepared for GitHub Pages.
 
 GitHub's official docs say GitHub Pages is available on public repositories with GitHub Free, and that Pages can publish either from a branch or from a GitHub Actions workflow.
 
+## Publishing updates
+
+Once the repository has GitHub Pages enabled and local GitHub credentials are working, you can publish fresh tracker data with:
+
+```bash
+./scripts/publish.sh
+```
+
+That script rebuilds `data/latest.js`, commits changes to `data/latest.json` and `data/latest.js`, and pushes them to `main`.
+
 ## Source policy
 
 The tracker is designed to prefer:
