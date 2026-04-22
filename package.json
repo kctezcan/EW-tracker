@@ -1,0 +1,9 @@
+{
+  "name": "eisbach-wave-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static tracker site for the current state of Munich's Eisbach wave.",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}

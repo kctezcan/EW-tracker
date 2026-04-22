@@ -1,0 +1,284 @@
+window.EISBACH_DATA = {
+  "meta": {
+    "title": "Eisbach Wave Tracker",
+    "headline": "As of April 22, 2026, the Eisbach wave is still officially closed, but reconstruction work has clearly moved back into active testing.",
+    "summary": "The famous Munich surf wave did not reliably re-form after the fall 2025 channel cleanup removed sediment and altered the flow geometry. Since then, the issue has become part engineering problem, part safety debate, and part political fight. The current state is not a reopening: Munich still considers the existing whitewater too dangerous. But the city, the surf community, and engineering experts are now openly testing ways to rebuild a stable, legal, and safer wave.",
+    "outlook": "Expect more approved trial installs, then a decision on legal responsibility and a final rebuild concept before any full reopening.",
+    "nextWatch": "Watch for an official Munich statement confirming the newest reported ramp-test window and for any update on whether the city can meet the promised summer-holiday reopening target.",
+    "statusLabel": "Officially closed / reconstruction underway",
+    "statusTone": "warning",
+    "summaryConfidence": "high",
+    "asOf": "2026-04-22T09:00:00+03:00",
+    "timezone": "Europe/Istanbul",
+    "generatedByBuild": "2026-04-22T06:49:20.690Z"
+  },
+  "facts": [
+    {
+      "label": "Current legal status",
+      "value": "Surfing is banned until further notice.",
+      "detail": "Munich issued a fresh general order on February 11, 2026 because the spot had turned into dangerous whitewater."
+    },
+    {
+      "label": "Physical wave state",
+      "value": "Usually unstable whitewater, not a dependable green wave.",
+      "detail": "The wave briefly resurfaced around Easter 2026, then faded again within days."
+    },
+    {
+      "label": "Main blockers",
+      "value": "Safety, liability, and hydraulics.",
+      "detail": "The debate is no longer just about surfing technique; it is now also about legal responsibility and how to create a repeatable wave shape."
+    },
+    {
+      "label": "Engineering lead",
+      "value": "Prof. Robert Meier-Staude, Hochschule München.",
+      "detail": "His tests with the surf community are the most concrete technical path back to a stable wave."
+    },
+    {
+      "label": "Political target",
+      "value": "Reopen by the summer holidays.",
+      "detail": "Dominik Krause repeated that goal in the city's April 16, 2026 update."
+    },
+    {
+      "label": "Why a permanent install matters",
+      "value": "Without one, the city says the wave appears only 30 to 40 days a year.",
+      "detail": "That strongly suggests a durable engineered solution is being treated as the realistic path."
+    }
+  ],
+  "watchlist": [
+    {
+      "title": "Confirmation of the latest test window",
+      "detail": "BILD reported on April 18 that approved ramp trials had started for four weeks. That is promising, but it still needs matching confirmation from a primary official source."
+    },
+    {
+      "title": "Liability model for a rebuilt wave",
+      "detail": "The hardest unresolved issue is who carries legal responsibility if the wave is rebuilt as a managed, quasi-official sports site."
+    },
+    {
+      "title": "Whether the summer deadline holds",
+      "detail": "If Munich misses the summer-holiday goal, the political argument around bureaucracy versus safety will intensify again."
+    }
+  ],
+  "coverage": [
+    "Official Munich city statements and legal notices",
+    "Engineering and university reporting tied to the reconstruction experiments",
+    "IGSM and other public surf-community signals",
+    "Recent German news coverage, especially dpa-based reports",
+    "Publicly indexed social references when available; no private or login-walled scraping"
+  ],
+  "feed": [
+    {
+      "id": "2026-04-18-bild-approved-tests",
+      "date": "2026-04-18",
+      "category": "news",
+      "categoryLabel": "News",
+      "sourceLabel": "BILD",
+      "title": "Newest report says approved ramp tests have started",
+      "summary": "BILD reported that selected surfers had begun day-by-day testing of different ramp constructions under an approved four-week test window, with results to be passed back to the city. That would mark the clearest move yet from argument into formal trial operation.",
+      "impact": "Positive movement, but still not a reopening",
+      "statusImpact": "positive",
+      "confidence": "medium",
+      "url": "https://www.bild.de/regional/muenchen/offizielle-surfer-versuche-muenchen-testet-die-neue-eisbachwelle-69d1133d8ba297d4b122f002"
+    },
+    {
+      "id": "2026-04-16-city-annual-statement",
+      "date": "2026-04-16",
+      "category": "official",
+      "categoryLabel": "Official",
+      "sourceLabel": "City of Munich",
+      "title": "Munich says the goal is still to restore surfing at the Eisbach",
+      "summary": "In its April 16, 2026 statement, the city said approved experiments with Prof. Robert Meier-Staude and surfers were ongoing, called the tests promising, and added that fallback design work was also being developed with university experts if the current trial path fails.",
+      "impact": "Strong confirmation that restoration is active",
+      "statusImpact": "positive",
+      "confidence": "high",
+      "url": "https://stadt.muenchen.de/news/toedlicher-unfall-eisbachwelle.html?lang=en"
+    },
+    {
+      "id": "2026-04-16-ramp-design-report",
+      "date": "2026-04-16",
+      "category": "news",
+      "categoryLabel": "News",
+      "sourceLabel": "t-online citing Abendzeitung",
+      "title": "Report points to a three-part hardwood ramp as the leading design",
+      "summary": "A t-online report, citing the Abendzeitung, said the conclusion from recent tests favored a three-part hardwood ramp fixed to the bridge pillar and concrete side walls. It is one of the strongest technical clues about what a rebuilt wave might actually look like.",
+      "impact": "Technical path is getting more concrete",
+      "statusImpact": "positive",
+      "confidence": "medium",
+      "url": "https://muenchen.t-online.de/region/muenchen/id_101214988/muenchen-neues-gutachten-zur-rettung-der-eisbachwelle-soll-vorliegen.html"
+    },
+    {
+      "id": "2026-04-06-easter-comeback-fades",
+      "date": "2026-04-06",
+      "category": "news",
+      "categoryLabel": "News",
+      "sourceLabel": "ZEIT / dpa",
+      "title": "The Easter comeback vanishes almost immediately",
+      "summary": "After briefly returning around Karfreitag, the wave nearly disappeared again. Reports said a submerged grid may have helped it rise for a moment, showing how fragile and contested the current state still is.",
+      "impact": "Confirms the wave is still unstable",
+      "statusImpact": "warning",
+      "confidence": "high",
+      "url": "https://www.zeit.de/gesellschaft/zeitgeschehen/2026-04/muenchen-englischer-garten-surfen-welle"
+    },
+    {
+      "id": "2026-04-03-wave-reappears",
+      "date": "2026-04-03",
+      "category": "news",
+      "categoryLabel": "News",
+      "sourceLabel": "ZEIT / dpa",
+      "title": "Wave briefly reappears before Easter and reignites the debate",
+      "summary": "The standing wave unexpectedly returned for a short window, drawing surfers and onlookers back to the spot. At the same time, Dominik Krause renewed the political target of getting the wave back for the summer holidays.",
+      "impact": "Momentum returns, but without durability",
+      "statusImpact": "positive",
+      "confidence": "high",
+      "url": "https://www.zeit.de/news/2026-04/03/eisbachwelle-vor-ostern-wieder-auferstanden"
+    },
+    {
+      "id": "2026-03-01-protest",
+      "date": "2026-03-01",
+      "category": "community",
+      "categoryLabel": "Community",
+      "sourceLabel": "ZEIT / dpa",
+      "title": "Around 250 people protest the surf ban",
+      "summary": "A public demonstration pushed back against the continuing closure and showed that the wave had become a civic and political issue, not just a sports story.",
+      "impact": "Pressure on city leadership increases",
+      "statusImpact": "neutral",
+      "confidence": "high",
+      "url": "https://www.zeit.de/news/2026-03/01/surfgemeinschaft-demonstriert-fuer-freigabe-der-eisbachwelle"
+    },
+    {
+      "id": "2026-02-28-igsm-election",
+      "date": "2026-02-28",
+      "category": "community",
+      "categoryLabel": "Community",
+      "sourceLabel": "IGSM",
+      "title": "IGSM turns the Eisbach into a local-election issue",
+      "summary": "The surf association published candidates' positions and framed the Eisbach as public cultural infrastructure. That made it clear the future of the wave now sits inside Munich's wider political identity debate.",
+      "impact": "Political stakes become explicit",
+      "statusImpact": "neutral",
+      "confidence": "high",
+      "url": "https://www.igsm.info/2026/02/"
+    },
+    {
+      "id": "2026-02-11-surf-ban",
+      "date": "2026-02-11",
+      "category": "official",
+      "categoryLabel": "Official",
+      "sourceLabel": "City of Munich",
+      "title": "Munich formally bans surfing because the spot is too dangerous",
+      "summary": "The city said the partial wave that still formed had turned into mostly non-surfable whitewater and posed an immediate drowning risk, so it imposed a new general ban on surfing at the site.",
+      "impact": "Major setback",
+      "statusImpact": "warning",
+      "confidence": "high",
+      "url": "https://ru.muenchen.de/2026/28/Surfverbot-auf-der-Eisbachwelle-Neue-Allgemeinverfuegung-122846"
+    },
+    {
+      "id": "2026-02-04-instagram-video",
+      "date": "2026-02-04",
+      "category": "social",
+      "categoryLabel": "Social signal",
+      "sourceLabel": "Dieter Reiter via ZEIT / dpa",
+      "title": "An Instagram video from the mayor signals cautious optimism",
+      "summary": "A dpa report said then-mayor Dieter Reiter posted an Instagram video from the first reconstruction attempt and said it did not look bad. It was one of the rare public social signals from city leadership during the repair push.",
+      "impact": "Public backing for experiments",
+      "statusImpact": "positive",
+      "confidence": "medium",
+      "url": "https://www.zeit.de/news/2026-02/04/neuer-anlauf-fuer-muenchens-legendaere-surfwelle-am-eisbach"
+    },
+    {
+      "id": "2026-01-12-project-trial",
+      "date": "2026-01-12",
+      "category": "official",
+      "categoryLabel": "Official",
+      "sourceLabel": "City of Munich",
+      "title": "City and surf groups agree on a project trial",
+      "summary": "Munich announced a project attempt to test how the wave could be restored, with the surf groups carrying responsibility during the trial and the city handling technical checks on the structures.",
+      "impact": "Formal process begins",
+      "statusImpact": "positive",
+      "confidence": "high",
+      "url": "https://ru.muenchen.de/2026/6/Eisbachwelle-Einigung-auf-Projektversuch-122250"
+    },
+    {
+      "id": "2025-11-27-hm-pilot",
+      "date": "2025-11-27",
+      "category": "science",
+      "categoryLabel": "Engineering",
+      "sourceLabel": "Hochschule München",
+      "title": "First pilot test proves the wave can be pushed back toward a surfable shape",
+      "summary": "The university's on-site test with wooden kickers briefly created a roughly three-meter green wave before it collapsed again into whitewater. That did not solve the problem, but it showed the geometry could be influenced.",
+      "impact": "Early technical proof of concept",
+      "statusImpact": "positive",
+      "confidence": "high",
+      "url": "https://hm.edu/aktuelles/news/news_detailseite_483904.de.html"
+    },
+    {
+      "id": "2025-11-05-wave-disappears",
+      "date": "2025-11-05",
+      "category": "news",
+      "categoryLabel": "News",
+      "sourceLabel": "Secret Munich",
+      "title": "After the fall cleanup, the wave fails to return",
+      "summary": "Public reporting in early November documented the core problem: after the annual cleanup and sediment removal, the Eisbach wave did not build back into its usual standing form.",
+      "impact": "Start of the modern crisis",
+      "statusImpact": "warning",
+      "confidence": "medium",
+      "url": "https://secretmuenchen.com/en/ice-creek-wave-disappeared-in-munich/"
+    }
+  ],
+  "sources": [
+    {
+      "label": "City of Munich, April 16, 2026",
+      "type": "Official statement",
+      "confidence": "high",
+      "note": "Best primary source for the current legal status, active experiments, natural-wave limits, and Krause's summer-holiday target.",
+      "url": "https://stadt.muenchen.de/news/toedlicher-unfall-eisbachwelle.html?lang=en"
+    },
+    {
+      "label": "Munich legal notice, February 11, 2026",
+      "type": "Official notice",
+      "confidence": "high",
+      "note": "Primary source for the still-active surf ban and the city's description of the whitewater danger.",
+      "url": "https://ru.muenchen.de/2026/28/Surfverbot-auf-der-Eisbachwelle-Neue-Allgemeinverfuegung-122846"
+    },
+    {
+      "label": "City project-trial agreement, January 12, 2026",
+      "type": "Official process update",
+      "confidence": "high",
+      "note": "Shows when the city and surf groups moved from deadlock toward a formal reconstruction trial.",
+      "url": "https://ru.muenchen.de/2026/6/Eisbachwelle-Einigung-auf-Projektversuch-122250"
+    },
+    {
+      "label": "Hochschule München pilot report, November 27, 2025",
+      "type": "Engineering source",
+      "confidence": "high",
+      "note": "Most direct technical description of how the wave behaves under controlled intervention.",
+      "url": "https://hm.edu/aktuelles/news/news_detailseite_483904.de.html"
+    },
+    {
+      "label": "IGSM February 2026 archive",
+      "type": "Community source",
+      "confidence": "high",
+      "note": "Useful for understanding how central the wave has become in Munich's civic and political identity.",
+      "url": "https://www.igsm.info/2026/02/"
+    },
+    {
+      "label": "ZEIT / dpa Easter comeback coverage",
+      "type": "News",
+      "confidence": "high",
+      "note": "Best recent reporting on the wave's brief return and how quickly it collapsed again.",
+      "url": "https://www.zeit.de/gesellschaft/zeitgeschehen/2026-04/muenchen-englischer-garten-surfen-welle"
+    },
+    {
+      "label": "t-online ramp-design report",
+      "type": "News",
+      "confidence": "medium",
+      "note": "Important for the current leading design idea, but it relies on cited reporting rather than a fresh city publication.",
+      "url": "https://muenchen.t-online.de/region/muenchen/id_101214988/muenchen-neues-gutachten-zur-rettung-der-eisbachwelle-soll-vorliegen.html"
+    },
+    {
+      "label": "BILD on approved April tests",
+      "type": "News",
+      "confidence": "medium",
+      "note": "Currently the freshest signal that approved trials may already be active, but it should still be confirmed against primary sources.",
+      "url": "https://www.bild.de/regional/muenchen/offizielle-surfer-versuche-muenchen-testet-die-neue-eisbachwelle-69d1133d8ba297d4b122f002"
+    }
+  ]
+};
